@@ -11,6 +11,14 @@ int inhibitor_radii[SCALE_COUNT]    = {8,16,32,64,128,256,512,1024,2048};
 int variation_radii[SCALE_COUNT]    = {1,1,1,1,1,1,1,1,1};
 float modifiers_values[SCALE_COUNT] = {0.002,0.002,0.002,0.002,0.002,0.002,0.002,0.002,0.002};
 int calculation_vector[SCALE_COUNT] = {0,0,0,0,0,0,0,0};
+
+/*
+int activator_radii[SCALE_COUNT]    = {4,8,16,32,64,128,256};
+int inhibitor_radii[SCALE_COUNT]    = {8,16,32,64,128,256,512};
+int variation_radii[SCALE_COUNT]    = {1,1,1,1,1,1,1};
+float modifiers_values[SCALE_COUNT] = {0.02,0.02,0.02,0.02,0.02,0.02,0.02};
+int calculation_vector[SCALE_COUNT] = {0,0,0,0,0,0};
+*/
 /*
 unsigned char color_map[SCALE_COUNT * 4] = {
     255,0,  0,  255,
@@ -72,7 +80,6 @@ unsigned char color_map[SCALE_COUNT * 4] = {
 */
 
 /* those look nice*/
-/*
 unsigned char color_map[SCALE_COUNT * 4] = {
     248, 201, 119, 0,
     63, 136, 143, 0,
@@ -84,7 +91,7 @@ unsigned char color_map[SCALE_COUNT * 4] = {
     217, 127, 132, 0,
     168, 205, 136, 0,
 };
-*/
+/*
 unsigned char color_map[SCALE_COUNT * 4] = {
     220, 70, 89, 0,
     123, 123, 234, 0,
@@ -92,10 +99,11 @@ unsigned char color_map[SCALE_COUNT * 4] = {
     79, 129, 189, 0,
     0, 128, 128, 0,
     255, 128, 0, 0,
-    147, 112, 219, 0,
-    40, 160, 120, 0,
+    //147, 112, 219, 0,
+    //40, 160, 120, 0,
     156, 175, 7, 0,
 };
+*/
 #define SIZE_REAL (DIM * DIM)
 #define SIZE_COMP (DIM * (DIM / 2 + 1))
 int activator_counts[SCALE_COUNT] = {0};

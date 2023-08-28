@@ -3,7 +3,7 @@
 #include <cufft.h>
 #include <thrust/extrema.h>
 
-#define DIM 4096
+#define DIM 2048
 
 #define SCALE_COUNT 9
 
