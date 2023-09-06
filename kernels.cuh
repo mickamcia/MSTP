@@ -1,11 +1,10 @@
 #include <cuda_runtime.h>
-#include <cuda_gl_interop.h>
 #include <cufft.h>
 #include <thrust/extrema.h>
 
-#define DIM 2048
+#define DIM 4096
 
-#define SCALE_COUNT 9
+#define SCALE_COUNT 5
 
 __global__ void init_mat(float *d_signal, float rad, int width, int height){
     int x = blockIdx.x * blockDim.x + threadIdx.x;
